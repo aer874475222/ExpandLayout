@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <com.example.luis.expandapplication.ExpandLayout
+        android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            >
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="成交量"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="最低价"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000.00"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="昨收盘价"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="00.00%"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="内盘数量"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/ll_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            >
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="外盘数量"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="涨停价"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000.00"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="跌停价"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="00.00%"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="委差"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/ll_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            >
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="库存量"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="均价"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000.00"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="提货量"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/stock_detail_weight">
+                <TextView
+                    android:text="提货比"
+                    style="@style/stock_detail_text_label"
+                    />
+                <TextView
+                    android:text="0000"
+                    style="@style/stock_detail_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.luis.expandapplication.ExpandLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="4dp"
+            android:button="@drawable/selector_stock_toggle"
+            android:background="@null"
+            />
+    </LinearLayout>
+</LinearLayout>
